@@ -42,7 +42,7 @@ class Fish:
     def update(self):
         self.position += self.attributes["velocity"]
         self.bounce()
-        self.attributes["health"] -= 0.1
+        self.attributes["health"] -= 0.001
         self.attributes["color"] = (
             self.attributes["color"][0],
             max(0, self.attributes["color"][1] - 0.1 * self.attributes["health"]),
@@ -67,7 +67,11 @@ class Fish:
     
     def mutate(self):
         attribute_to_mutate = random.choice(list(self.attributes.keys()))
-        self.attributes[attribute_to_mutate] = random.choice(attribute_library[attribute_to_mutate])
+        new_value = random.choice(attribute_library[attribute_to_mutate])
+        if isinstance(new_value, tuple) or isinstance(new_value, pygame.math.Vector2):
+            self.attributes[attribute_to_mutate] += new_value
+        else:
+            self.attributes[attribute_to_mutate] = new_value
     
     def draw(self):
         color = tuple(max(0, min(int(c), 255)) for c in self.attributes["color"])
@@ -125,6 +129,7 @@ attribute_library = {
         for _ in range(20)
     ],
     "health": [100 + random.uniform(-10, 10) for _ in range(20)]
+    # Add more attributes with a wider range of values here
 }
 
 # Main loop
