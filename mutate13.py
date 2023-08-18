@@ -25,7 +25,7 @@ class Fish:
         self.position = pygame.Vector2(x, y)
         self.attributes = {
             "color": (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)),
-            "radius": random.randint(5, 20),
+            "radius": random.randint(1, 200),
             "velocity": pygame.Vector2(random.uniform(-1, 1), random.uniform(-1, 1)).normalize() * random.uniform(1, 3),
             "health": 100
         }
