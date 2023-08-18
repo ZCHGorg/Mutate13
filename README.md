@@ -24,31 +24,34 @@ This simulation uses the Pygame library to create a graphical representation of 
 
 ## Installation
 
-1. Make sure you have Python 3.x installed on your machine
-2. Windows:
-Visit the official Python website: https://www.python.org/downloads/
-Download the latest version of Python for Windows (usually a button labeled "Download Python x.x.x").
-Run the installer executable.
-Important: During the installation process, make sure to check the box that says "Add Python x.x to PATH." This will allow you to use Python from the Command Prompt.
-Click "Install Now" and follow the prompts to complete the installation.
-Open the Command Prompt and type python to check if Python is installed. You should see the Python interactive shell.
-macOS:
-Open a web browser and visit the official Python website: https://www.python.org/downloads/
-Download the latest version of Python for macOS (usually a button labeled "Download Python x.x.x").
-Run the installer package.
-Follow the installation instructions.
-Open the Terminal app and type python3 to check if Python is installed. You should see the Python interactive shell.
-Linux (Ubuntu/Debian):
-Open the Terminal.
-Run the following commands to update the package list and install Python:
-bash
-Copy code
+# Python Installation Guide
+
+## Windows:
+
+1. Visit the official Python website: [Python Downloads](https://www.python.org/downloads/)
+2. Download the latest version of Python for Windows (usually a button labeled "Download Python x.x.x").
+3. Run the installer executable.
+4. **Important**: During the installation process, make sure to check the box that says "Add Python x.x to PATH." This will allow you to use Python from the Command Prompt.
+5. Click "Install Now" and follow the prompts to complete the installation.
+6. Open the Command Prompt and type `python` to check if Python is installed. You should see the Python interactive shell.
+
+## macOS:
+
+1. Open a web browser and visit the official Python website: [Python Downloads](https://www.python.org/downloads/)
+2. Download the latest version of Python for macOS (usually a button labeled "Download Python x.x.x").
+3. Run the installer package.
+4. Follow the installation instructions.
+5. Open the Terminal app and type `python3` to check if Python is installed. You should see the Python interactive shell.
+
+## Linux (Ubuntu/Debian):
+
+1. Open the Terminal.
+2. Run the following commands to update the package list and install Python:
+
+```bash
 sudo apt update
 sudo apt install python3
-After installation, you can run python3 in the Terminal to open the Python interactive shell.
-Remember that the installation steps may vary slightly depending on the specific version of Python and your operating system. The key points are to download the installer from the official Python website and ensure that Python is added to your system's PATH during installation so that you can use it from the command line.
 
-Once you have Python installed, you can proceed to set up your simulation according to the instructions in your README.md.
 3. Clone this repository:
 
     ```bash
