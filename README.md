@@ -2,7 +2,7 @@
 A collection of useful or fun mutation scripts
 # Inheritable Fish Mutation Simulation
 
-A fun and visually appealing simulation of fish that move, eat each other, mutate, and inherit attributes. 
+A fun and visually appealing simulation of "fish" that move, eat each other, mutate, and inherit attributes. 
 
 ![Simulation Demo](demo.gif) <!-- Replace with a GIF or screenshot of your simulation in action -->
 
@@ -25,13 +25,13 @@ This simulation uses the Pygame library to create a graphical representation of 
 2. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/inheritable-fish-simulation.git
+    git clone [https://github.com/ZCHGorg/Mutate13](https://github.com/ZCHGorg/Mutate13.git)
     ```
 
 3. Navigate to the project directory:
 
     ```bash
-    cd inheritable-fish-simulation
+    cd mutate13
     ```
 
 4. Install the required dependencies using pip:
